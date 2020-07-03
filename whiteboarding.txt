@@ -1,0 +1,27 @@
+PROBLEM 1:
+You are climbing a stair case. It takes n steps to reach to the top.
+Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top?
+Note: Given n will be a positive integer.
+
+
+1. Have a results array prepopulated with 1 and 2.
+2. I will do this operation n times
+3. results will shovel in the two last inputs i put in.
+4. i will return the last number in the array (the one i just put in)
+
+def climb_stairs(n)
+    return 0 if n == 0
+    res = [0,1]
+
+    n.times do
+        res << (res[-1] + res[-2])
+    end
+
+    res[-1]
+end
+
+
+
+
+
+
