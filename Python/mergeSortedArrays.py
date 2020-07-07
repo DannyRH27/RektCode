@@ -14,3 +14,4 @@ def merge(nums1, nums2,m=3, n=3):
 
   return nums1
 print(merge([1, 2, 3, 0, 0, 0], [2, 5, 6]))
+(())
