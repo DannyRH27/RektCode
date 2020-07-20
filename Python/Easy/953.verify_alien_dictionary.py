@@ -4,7 +4,7 @@
 # Given a sequence of words written in the alien language, and the order of the alphabet, 
 # return true if and only if the given words are sorted lexicographicaly in this alien language.
 def verify_alien_dictionary(words, order):
-  
+  cool
 
 verify_alien_dictionary(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz")
 # True
