@@ -14,6 +14,8 @@ def findClosestElements(arr, k, x):
     else:
       right = pivot - 1
   
+
+  print(findClosestElements)
   
 
 
