@@ -9,4 +9,5 @@ def thirdMax(nums):
     return min(ans)
 
   return max(ans)
+  
 print(thirdMax([1, 1, 2]))
