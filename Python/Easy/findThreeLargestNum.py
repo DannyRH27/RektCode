@@ -1,5 +1,4 @@
 def findThreeLargestNumbers(array):
-    # Write your code here.
   new_arr = [None] * 3
 
   for n in array:
