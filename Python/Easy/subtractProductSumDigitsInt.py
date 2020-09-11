@@ -10,3 +10,4 @@ def subtractProductAndSum(n):
 
 
 print(subtractProductAndSum(234))
+print(subtractProductAndSum(4421))
