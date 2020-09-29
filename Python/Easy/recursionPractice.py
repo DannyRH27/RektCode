@@ -3,15 +3,15 @@
 # Return a string with all numbers from 1 to 'number' using recursion.
 # You can divide each digit by spaces or new lines.
 
-def task_a(num):
-  if num == 1:
-    return str(1)
-  else:
-    return str(task_a(num-1)) + " " + str(num)
+# def task_a(num):
+#   if num == 1:
+#     return str(1)
+#   else:
+#     return str(task_a(num-1)) + " " + str(num)
 
 
-print(task_a(10)) # "1 2 3 4 5 6 7 8 9 10"
-print(task_a(5)) # "1 2 3 4 5"
+# print(task_a(10)) # "1 2 3 4 5 6 7 8 9 10"
+# print(task_a(5)) # "1 2 3 4 5"
 
 
 ### Task B
@@ -20,13 +20,17 @@ print(task_a(5)) # "1 2 3 4 5"
 # from 'number1' to 'number2' including them.
 # Otherwise, return a string with all numbers from number1 to number2 in descending order.
 
-# def task_b(num1, num2):
+def task_b(num1, num2):
+  if num1 <= num2:
+    if num1 == num2:
+      return str(num2)
+    else:
+      return str(num1) + " " + str(task_b(num1+1, num2))
+  else:
+    return str(task_b(num1, num2+1)) + " " + str(num2)
 
-
-# end
-
-# p task_b(1, 10) # "1 2 3 4 5 6 7 8 9 10"
-# p task_b(9, 2) # "9 8 7 6 5 4 3 2"
+print(task_b(1, 10)) # "1 2 3 4 5 6 7 8 9 10"
+print(task_b(9, 2)) # "9 8 7 6 5 4 3 2"
 
 
 ### Task C
