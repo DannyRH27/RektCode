@@ -20,17 +20,17 @@
 # from 'number1' to 'number2' including them.
 # Otherwise, return a string with all numbers from number1 to number2 in descending order.
 
-def task_b(num1, num2):
-  if num1 <= num2:
-    if num1 == num2:
-      return str(num2)
-    else:
-      return str(num1) + " " + str(task_b(num1+1, num2))
-  else:
-    return str(task_b(num1, num2+1)) + " " + str(num2)
+# def task_b(num1, num2):
+#   if num1 <= num2:
+#     if num1 == num2:
+#       return str(num2)
+#     else:
+#       return str(num1) + " " + str(task_b(num1+1, num2))
+#   else:
+#     return str(task_b(num1, num2+1)) + " " + str(num2)
 
-print(task_b(1, 10)) # "1 2 3 4 5 6 7 8 9 10"
-print(task_b(9, 2)) # "9 8 7 6 5 4 3 2"
+# print(task_b(1, 10)) # "1 2 3 4 5 6 7 8 9 10"
+# print(task_b(9, 2)) # "9 8 7 6 5 4 3 2"
 
 
 ### Task C
@@ -52,27 +52,34 @@ print(task_b(9, 2)) # "9 8 7 6 5 4 3 2"
 
 
 # def task_d(num):
+#   if num <=2:
+#     return num == 2
+#   else:
+#     return task_d(num / 2.0)
 
-
-# end
-
-# p task_d(64) # true
-# p task_d(128) # true
-# p task_d(17) # false
+# print(task_d(64)) # true
+# print(task_d(128)) # true
+# print(task_d(17)) # false
 
 
 # ### Task E
 # You were given a natural 'number'. Calculate the sum of its digits.
 # You should not use string, array or loops.
 
-# def task_e(num):
+def task_e(num):
+  if num < 10:
+    print(num)
+    return num
+  else:
+    print(num)
+    return task_e(num / 10) + task_e(num % 10)
 
-
-# end
-
-# p task_e(1459) # 19
-# p task_e(367) # 16
-# p task_e(39) # 12
+task_e(1459)
+task_e(367)
+task_e(39)
+# print(task_e(1459)) # 19
+# print(task_e(367)) # 16
+# print(task_e(39)) # 12
 
 
 # ### Task F
