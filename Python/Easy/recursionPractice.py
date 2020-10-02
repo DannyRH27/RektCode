@@ -66,17 +66,17 @@
 # You were given a natural 'number'. Calculate the sum of its digits.
 # You should not use string, array or loops.
 
-def task_e(num):
-  if num < 10:
-    print(num)
-    return num
-  else:
-    print(num)
-    return task_e(num / 10) + task_e(num % 10)
+# def task_e(num):
+#   if num < 10:
+#     print(num)
+#     return num
+#   else:
+#     print(num)
+#     return task_e(num / 10) + task_e(num % 10)
 
-task_e(1459)
-task_e(367)
-task_e(39)
+# task_e(1459)
+# task_e(367)
+# task_e(39)
 # print(task_e(1459)) # 19
 # print(task_e(367)) # 16
 # print(task_e(39)) # 12
@@ -86,14 +86,15 @@ task_e(39)
 # You were given a natural number 'number'. Return all its digits one by one in reverse order separating them by spaces or new lines
 # You should not use string, array or loops. Use only recursion and arithmetic operators.
 
-# def task_f(num):
+def task_f(num):
+  if num < 10:
+    return num
+  else:
+    return task_f(num / 10) + task_f(num % 10)
 
-
-# end
-
-# p task_f(1459) # "9 5 4 1"
-# p task_f(367) # "7 6 3"
-# p task_f(39) # "9 3"
+print(task_f(1459)) # "9 5 4 1"
+print(task_f(367)) # "7 6 3"
+print(task_f(39)) # "9 3"
 
 
 # ### Task G
