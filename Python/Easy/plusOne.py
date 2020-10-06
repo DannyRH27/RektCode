@@ -17,4 +17,3 @@ def plusOne(digits):
 print(plusOne([4,3,2,1]))
 print(plusOne([0]))
 print(plusOne([9]))
-print(plusOne([1,2,3]))
