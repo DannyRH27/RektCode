@@ -29,6 +29,6 @@ def merge_lists(lst1, lst2):
     elif lst2:
         new_list[0:len(lst2)] = lst2
     return new_list
-x = [1, 2, 3]
-y = [4, 5, 6]
+
+
 print(merge_lists(x, y), x, y)
