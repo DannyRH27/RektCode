@@ -21,4 +21,3 @@ def dfs_traversal(g, source):
 
     return result
 
-
