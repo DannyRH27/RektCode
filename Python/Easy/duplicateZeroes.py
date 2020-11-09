@@ -11,5 +11,5 @@ def duplicateZeroes(arr):
   print (arr)
 
 duplicateZeroes([1, 0, 2, 3, 0, 4, 5, 0])
-duplicateZeroes([1, 2, 3])
+
 
