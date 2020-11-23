@@ -34,8 +34,8 @@ def maxProduct(nums):
 
   return abs_max
 
-# assert(maxProduct([2,3,-2,4]) == 6)
-# assert(maxProduct([-2,0,-1]) == 0)
+assert(maxProduct([2,3,-2,4]) == 6)
+assert(maxProduct([-2,0,-1]) == 0)
 assert(maxProduct([2, -5, -2, -4, 3]) == 24)
 assert(maxProduct([3, -1, 4]) == 4)
 assert(maxProduct([-2, 3, -4]) == 24)
