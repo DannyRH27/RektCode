@@ -21,16 +21,13 @@ def maxProduct(nums):
 
   abs_max = nums[0]
   curr_max = abs_max 
+  curr_min = abs_max
   pointer = 1
   while pointer < len(nums):
-    if curr_max == 0:
-      curr_max = nums[pointer]
-      pointer += 1
-      continue
-    if (curr_max * nums[pointer]) == 0:
-      curr_max = 0
-    else:
-      curr_max *= nums[pointer]
+    temp_max = max(curr_max * nums[pointer], nums[pointer], curr_min * nums[pointer])
+    curr_min = min(curr_max * nums[pointer], nums[pointer], curr_min * nums[pointer])
+    
+    curr_max = temp_max
     if curr_max > abs_max:
       abs_max = curr_max
     pointer += 1
