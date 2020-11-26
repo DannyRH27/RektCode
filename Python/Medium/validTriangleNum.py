@@ -1,7 +1,7 @@
 def triangleNumber(nums):
   nums.sort()
   count = 0
-
+  nums = [n for n in nums if n != 0]
   for i in range(len(nums)-2):
     start = i + 1
     end = start + 1
@@ -13,7 +13,7 @@ def triangleNumber(nums):
 
       count += end-start-1
       start +=1
-  # print(count)
+
   return count
 
 assert(triangleNumber([2,2,3,4]) == 3)
