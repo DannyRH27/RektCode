@@ -16,8 +16,6 @@ def numIslands(grid):
         continue
       count += 1
       dfs(i, j)
-  print(count)
-  print(grid)
   return count
 
 
