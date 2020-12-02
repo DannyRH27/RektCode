@@ -52,7 +52,7 @@ def shipWithinDays(weights, D):
   def bsearch(left,right):
 
     avg = int(math.floor((left / 2) + (right / 2)))
-    print(left, right, avg)
+
     while left < right:
       if possible(avg):
         return bsearch(left, avg)
