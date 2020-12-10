@@ -14,4 +14,25 @@ The return arr is B = [4,4,6]
 '''
 
 def coprimeCount(A):
-  return
+
+  def isCoprime(x, y):
+    while y != 0:
+      x, y = y, x % y
+    return x
+
+  B = [0] * len(A)
+  for i in range(len(A)):
+    count = 0
+    for j in range(1,A[i]):
+      if isCoprime(j,A[i]) == 1:
+        count += 1
+    B[i] = count
+
+  return B
+
+
+assert(coprimeCount([5,8,14]) == [4,4,6])
+
+
+
+  

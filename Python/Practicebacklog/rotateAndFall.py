@@ -44,3 +44,11 @@ rotateAndFall(box) = [['.', '.', '.'],
                       ['#', '#', '.'],
                       ['#', '#', '.']]
 '''
+
+def rotateAndFall(box):
+  num_rows = len(box)
+  num_cols = len(box[0])
+  postgravity = []
+  for _ in range(num_rows):
+    postgravity.append(['.'] * num_cols)
+  
