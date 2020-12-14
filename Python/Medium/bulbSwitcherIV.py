@@ -12,4 +12,4 @@ def minFlips(target):
 print(minFlips("10111"))
 print(minFlips("101"))
 print(minFlips("00000"))
-print(minFlips("001011101"))
+# print(minFlips("001011101"))
