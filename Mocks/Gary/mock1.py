@@ -99,5 +99,5 @@ def possibleRoutes(N):
 
   return valid_routes
 
-print(possibleRoutes(2))
+print(possibleRoutes(5))
 # assert(possibleRoutes(2) == set([['p1', 'd1', 'p2', 'd2'], ['p1', 'p2', 'd1', 'd2'], ['p1', 'p2', 'd2', 'd1'], ['p2', 'd2', 'p1', 'd1'], ['p2', 'p1', 'd1', 'd2'], ['p2', 'p1', 'd2', 'd1']]))
