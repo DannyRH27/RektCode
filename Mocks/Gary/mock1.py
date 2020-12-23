@@ -58,15 +58,7 @@ def validDelivery(route):
 
 
 
-# assert(validDelivery(["P1","D1"]) == True)
-# assert(validDelivery(["P1","D1","P2","D2"]) == True)
-# assert(validDelivery(["P2","D2","P1","D2"]) == False)
-# assert(validDelivery(["P1","P2","D1","D2"]) == True)
-# assert(validDelivery(["P1","P2","P1","D2"]) == False)
-# assert(validDelivery(["P1","D2","P2","D1"]) == False)
-# assert(validDelivery(["P1","P2","D2"]) == False)
-# assert(validDelivery(["P1","D1","P1","D1"]) == False)
-# assert(validDelivery(["P1","P2","D2","D1"]) == True)
+
 
 
 '''
