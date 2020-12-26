@@ -63,3 +63,5 @@ def minDays(bloomDay, m, k):
 assert(minDays([1, 10, 3, 10, 2],3,1) == 3)
 assert(minDays([1, 10, 3, 10, 2],3,2) == -1)
 assert(minDays([7, 7, 7, 7, 12, 7, 7], 2, 3) == 12)
+
+
