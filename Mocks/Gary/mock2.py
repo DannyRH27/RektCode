@@ -1,8 +1,8 @@
-'''
-Part 2: Given N deliveries, print out all the possible routes
+  '''
+  Part 2: Given N deliveries, print out all the possible routes
 
-Examples: N = 1 -> [p1, d1] 
-N = 2 -> [p1, d1, p2, d2], [p1, p2, d1, d2], [p1, p2, d2, d1], [p2, d2, p1, d1], [p2, p1, d1, d2], [p2, p1, d2, d1]
+  Examples: N = 1 -> [p1, d1] 
+  N = 2 -> [p1, d1, p2, d2], [p1, p2, d1, d2], [p1, p2, d2, d1], [p2, d2, p1, d1], [p2, p1, d1, d2], [p2, p1, d2, d1]
 
 at any given moment, i need to know what i can possibly put there
 i can try this recursively and see what's available to be added and continue adding until len(list is N8 2)

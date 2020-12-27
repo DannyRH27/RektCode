@@ -15,6 +15,9 @@ def spiralOrder(matrix):
   j = 0
 
   while i < n and j < m:
+    
+    val = matrix[i][j]
+
     return
 
 

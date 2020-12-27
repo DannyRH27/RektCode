@@ -15,6 +15,9 @@ with x coordinate as key and list of node values as value
 
 Sort the keys, and append the values to a list.
 
+Time complexity: O(nLogn)
+Space complexity: O(n)
+
 '''
 
 def verticalTraversal(root):
@@ -34,12 +37,17 @@ def verticalTraversal(root):
     dfs(node.right, x+1, y+1)
 
   dfs(root,0, 0)
-  keys = list(set(my_dict.keys()))
+  keys = list(my_dict.keys())
   keys.sort()
 
+  '''
+  this is n log n bc at worst, you just sort all the nodes in the tree
+  '''
+  
   for key in keys:
     my_dict[key].sort()
 
+  
   ans = []
   for key in keys:
     report = []

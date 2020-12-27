@@ -20,7 +20,9 @@ if in set,
 reset set with just that char
 count is now 1
 
-two pointer...
+two pointers,
+keep track of the latest index of letter
+
 
 '''
 
